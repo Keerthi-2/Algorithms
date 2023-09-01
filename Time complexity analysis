@@ -1,3 +1,21 @@
 Time complexity is :  Big O(N*log(log(N))
 
-where log(log(N)) is less than sqaure root of N (Sqrt(N))
+where log(log(N)) is less than sqaure root of N*(Sqrt(N))
+
+Derivation :
+
+> According to our inner for loop logic the loop iterates only in the cases of prime numbers.
+
+so lets assume the prime number till 20  as {  2 ,3 , 5 , 11, 13 , 17 ,19 }
+
+✔  for 2 iterations will be (N/2) and for 3 itertaions will be N/3 , by this we can generalize iterations as N//K if K is a prime number .
+
+Overall time complexity will be :  N/2+N/3+N/5+N/7+-------   by observing the pattern we can say that it is in harmonic progression (HP)
+
+Harmonic progression : sum of the terms till a specific range but as the inverse of terms there in arithemetic progression.
+
+
+****   Do you research on this algorithm and time complexity and add your doubts in my post in linkedin ***
+
+Linkedn Profile :  https://www.linkedin.com/in/keerthi-konduru/
+
