@@ -1,0 +1,3 @@
+Time complexity is :  Big O(N*log(log(N))
+
+where log(log(N)) is less than sqaure root of N (Sqrt(N))
