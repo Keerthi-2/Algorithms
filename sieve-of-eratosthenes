@@ -1,2 +1,39 @@
 
 #  we will see the steps involved in the algorithm and its implementation using a pseudo code.
+
+Algorithm :
+
+The Sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to a given limit. Here are the steps of the algorithm in simple lines:
+
+=> Create a list of consecutive integers from 2 through your desired limit i.e given input number.
+=> Start with the first number in the list (2), which is a prime number.
+=> Mark (all non-prime numbers) all multiples of the current number  in the list.
+=> Find the next number in the list that is not crossed out; this is the next prime number.
+=> Repeat steps 3 and 4 until you have processed all numbers up to the square root of your desired limit.
+=> Finally go through the list and  All the remaining numbers in the list that are not crossed out are prime numbers.
+
+Pseudo Code :
+
+    boolean[] isPrime = new boolean[limit + 1];
+        for (int i = 2; i <= limit; i++) {
+            isPrime[i] = true;
+        }
+
+        // Starting from 2 (the first prime number), mark all multiples as non-prime.
+        for (int currentNum = 2; currentNum * currentNum <= limit; currentNum++) {
+            if (isPrime[currentNum]) {
+                for (int multiple = currentNum * currentNum; multiple <= limit; multiple += currentNum) {
+                    isPrime[multiple] = false;
+                }
+            }
+        }
+
+        // Print the prime numbers
+        System.out.print("Prime numbers up to " + limit + ": ");
+        for (int i = 2; i <= limit; i++) {
+            if (isPrime[i]) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
