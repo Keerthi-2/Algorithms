@@ -4,7 +4,7 @@ Algorithm :
 3.cintinue the processs till  find the second largest and place it and so on until the data is sorted in ascending or descending order.
 
 Pseudo code:
-
+to sort array in increasing order:
 for (i = 0; i < n - 1; i++) {
 
 
@@ -24,4 +24,6 @@ for (i = 0; i < n - 1; i++) {
         }
 
       }
+
+To sort array in decreasing order just mention the condition in if statmenet in reverse way as arr[j]<arr[j+1]
 
