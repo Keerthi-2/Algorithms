@@ -1,0 +1,38 @@
+Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the
+smallest (or largest) element from the unsorted portion of the list and moving it its correct position in the sorted list.
+
+Algorithm :
+
+Initialization : Start with the entire list as unsorted.
+
+Find the minimum (or maximum) element : Scan through the unsorted portion of the list to find the minimum (or maximum) element. To do this, you compare each element with the current minimum (or maximum) and update the minimum (or maximum) if a smaller (or larger) element is found.
+
+Swap : Once you have found the minimum (or maximum) element in the unsorted portion, swap it with the first element in the unsorted portion. This effectively moves the selected element to the end of the sorted portion.
+
+Update the boundaries : The boundary between the sorted and unsorted portions shifts by one element. The sorted portion grows, and the unsorted portion shrinks.
+
+Repeat : Repeat steps 2-4 until the entire list is sorted. In each iteration, the smallest (or largest) element from the unsorted portion is selected and placed in its correct position in the sorted portion.
+
+Termination : The algorithm terminates when the unsorted portion becomes empty, and the entire list is sorted.
+
+
+
+Psuedo Code:
+
+ for (int i = 0; i < n-1; i++)
+        {
+            // Find the minimum element in unsorted array
+            int min_idx = i;
+            for (int j = i+1; j < n; j++)
+                if (arr[j] < arr[min_idx])
+                    min_idx = j;
+ 
+            // Swap the found minimum element with the first
+            // element
+            int temp = arr[min_idx];
+            arr[min_idx] = arr[i];
+            arr[i] = temp;
+        }
+    }
+
+we can modify condition in the if statement and can get the array in descending order.
