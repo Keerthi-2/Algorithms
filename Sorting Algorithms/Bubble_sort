@@ -1,0 +1,28 @@
+Algorithm :
+1.traverse from left to end of the array and compare adjacent elements and the higher one is placed at right side. 
+2.In this way, the largest element is moved to the rightmost end at first. 
+3.continue the processs till we find the second largest and place it at its position and then keep performing until the data is sorted in ascending or descending order.
+
+Pseudo code:
+to sort array in increasing order:
+for (i = 0; i < n - 1; i++) {
+
+
+      for (j = 0; j < n - i - 1; j++) {
+
+        if (arr[j] > arr[j + 1]) {
+
+          // Swap arr[j] and arr[j+1] if they are not in decreasing order
+
+          temp = arr[j];
+
+          arr[j] = arr[j + 1];
+
+          arr[j + 1] = temp;
+
+    
+        }
+
+      }
+
+To sort array in decreasing order just mention the condition in if statmenet in reverse way as arr[j]<arr[j+1]
