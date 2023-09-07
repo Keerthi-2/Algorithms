@@ -1,0 +1,43 @@
+Algorithm:
+
+If array only contains one element, return it.
+2. Else
+1. Pick one element to use as pivot.
+2. Partition elements into two sub-arrays
+1. Elements less than or equal to pivot
+2. Elements greater than pivot
+3. Quick sort two sub-arrays.
+
+4. Return results.
+
+
+Psuedo Code :
+
+void quicksort(int x[10],int first,int last)
+{
+    int pivot,j,temp,i;
+    if(first<last)
+    {
+      pivot=first;
+      i=first;
+      j=last;
+      while(i<j)
+      {
+          while(x[i]<=x[pivot]&&i<last)
+              i++;
+          while(x[j]>x[pivot])
+              j--;
+          if(i<j)
+          {
+              temp=x[i];
+              x[i]=x[j];
+              x[j]=temp;
+          }
+      }
+      temp=x[pivot];
+      x[pivot]=x[j];
+      x[j]=temp;
+      quicksort(x,first,j-1);
+      quicksort(x,j+1,last);
+}
+}
