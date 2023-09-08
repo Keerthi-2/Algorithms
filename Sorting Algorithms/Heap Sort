@@ -1,0 +1,29 @@
+Implement HeapSort: Implement the HeapSort algorithm to sort an array.
+
+Kth Largest Element in an Array: Find the kth largest element in an unsorted array.
+
+Top K Frequent Elements: Find the k most frequent elements in an array.
+
+Merge K Sorted Lists: Merge k sorted linked lists into one sorted list.
+
+Sort Nearly Sorted Array: Sort an array where each element is at most k positions away from its sorted position.
+
+Find Median in a Stream: Design a data structure to find the median in a stream of integers.
+
+Running Median: Find the median as you process elements in an array.
+
+Maximum Element of Each Subarray of Size K: Find the maximum element in each subarray of size k.
+
+Connect "n" Ropes with Minimum Cost: Connect ropes with minimum cost.
+
+Smallest Range in K Lists: Find the smallest range that includes at least one element from each of the K lists.
+
+Find k Closest Points to Origin: Find the k closest points to the origin in a 2D plane.
+
+Sort Characters by Frequency: Sort characters in a string based on their frequency.
+
+Kth Smallest Element in a Sorted Matrix: Find the kth smallest element in a sorted matrix.
+
+Super Ugly Number: Find the nth super ugly number based on a list of primes.
+
+Sort Integers by The Number of 1 Bits: Sort integers based on the number of 1's in their binary representation.
